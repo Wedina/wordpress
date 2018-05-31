@@ -1,0 +1,398 @@
+/*
+Theme Name: Wedina
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: moi
+Author URI: https://monsite.org/
+Description: first theme
+Version: 0.1
+*/
+
+/*GLOBAL */
+
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 2;
+	color: grey;
+}
+.container{
+	padding: 2rem;
+}
+h1{
+	font-size: 3em;
+}
+
+h3{
+	font-size: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 nav{
+	font-family: 'Candal', sans-serif;
+	font-weight: bold;
+}
+
+/* HEADER */
+
+
+header{
+	text-align: center;
+}
+
+nav img{
+	transition: 0.30s;
+}
+
+nav img:hover{
+	transform: rotate(0.5turn);
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color: #243f52;
+	font-size: 1.4em;
+	margin-top: 1em;
+	font-weight: bold;
+	transition: 0.30s;
+}
+
+nav a:hover{
+	color:#fb8a9b; 
+}
+
+nav a .fas{
+	display: block;
+	color: #fb8a9b;
+	transition: 0.30s;
+}
+
+nav a:hover .fas{
+	color: #243f52;
+	opacity: 0.5;
+}
+
+/*li{
+	list-style: none;
+}
+
+ul{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}*/
+
+
+.intro{
+	font-family: 'Candal', sans-serif;
+	background-image: url("img/background.jpg");
+	background-position: center;
+	color: white;
+	font-weight: normal;
+	padding: 2rem;
+}
+.intro p{
+	font-size: 1.4em;
+}
+
+.recherche{
+	background-color:#fb8a9b;
+	color: white;
+	padding-left: 1.5rem;
+	font-size: 1.4em;
+	text-align: left;
+}
+
+.recherche input{
+	width: 100%;
+	border: none;
+	background-color: transparent;
+}
+
+
+
+
+main h2{
+	border: 1px dashed #243f52 ;
+	border-bottom: none;
+	text-align: center;
+	color: #243f52;
+	font-size: 1.4em;
+	font-weight:
+}
+
+main h3,h4{
+	text-align: center;
+	color: #fb8a9b;
+}
+
+main .fas{
+	display: block;
+	text-align: center;
+	color: #fb8a9b;
+	padding: 0.5em 0;
+	font-size: 4em;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!FOOTER!!!!!!!!!!!!!!!!!!!!!!*/
+
+footer{
+	background-color: #24404f;
+	padding: 2rem;
+
+}
+
+footer nav a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	margin: 1rem 0rem;
+	padding: 1.1rem 1rem;
+	font-size: 1.2rem;
+}
+
+
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    color: grey;
+}
+
+#licence > a{
+	color: white;
+}
+
+#licence img {
+    width: 10%;
+}
+
+/*!!!!!!!!!!!!!!!!!!!MOBILE-CONTACT!!!!!!!!!!!!!!!!!MOBILE-CONTACT!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!MOBILE-CONTACT!!!!!!!!!!!!!!!!!MOBILE-CONTACT!!!!!!!!!!!!!*/
+
+.contact{
+	text-align: center;
+}
+
+ .contact .fas{
+	font-size: 1rem;
+	border-bottom: 2px dotted;
+	
+}
+
+.contact a,abbr{
+	text-decoration: none;
+	color: #fb8a9b;
+}
+
+
+
+.google{
+	width: 100%;
+	margin: auto;
+}
+
+/*!!!!!!!!!!!!!!!!!!!TABLETTE-MUALISE!!!!!!!!!!!!!!!!!TABLETTE-MUALISE!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!TABLETTE-MUALISE!!!!!!!!!!!!!!!!!TABLETTE-MUALISE!!!!!!!!!!!!!*/
+
+.formule{
+	border: 2px dotted;
+	margin: 3em 0;	
+}
+
+ul{
+	padding-left: 7em;	
+}
+
+.formule > h5{
+	background-color: #243f52;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	padding: 1em 0;
+	margin: 1em 0.5em;
+}
+
+.formule > h6{
+	text-align: center;
+	font-size: 1.1em;
+	padding: 1em 0;
+	margin: 1em 0.5em;
+}
+
+.formule > a{
+	display: inline-block;
+	text-decoration: none;
+	background-color:#fb8a9b;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	width: 80%;
+	margin: 1em 3em;	
+}
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!DESKTOP!!!!!!!!!!!!!!!!!DESKTOP!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!DESKTOP!!!!!!!!!!!!!!!!!DESKTOP!!!!!!!!!!!!!*/
+
+
+@media only screen and (min-width: 1028px){
+	.container{
+		max-width: 90%;
+		margin: auto;
+	}
+
+
+	nav{	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items:center;
+	}
+
+/*!!!!!!!!!!!!!!!!!!!MAIN-SECTION!!!!!!!!!!!!!!!!!MAIN-SECTION!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!MAIN-SECTION!!!!!!!!!!!!!!!!!MAIN-SECTION!!!!!!!!!!!!!*/
+	article{
+				padding: 1rem;
+	}
+
+
+	.colonnage{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+			}
+
+	.container .fas{
+	display: block;
+	font-size: 2rem;
+	}
+
+
+	.container i:hover {
+	        animation: bounce 0.35s ease infinite alternate;
+	}
+
+	@keyframes bounce{
+		from{
+	        transform :translateY(0);
+	    }
+	    to{
+	        transform :translateY(-20px);
+    }
+}
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!NAV-BOTTON!!!!!!!!!!!!!!!!!NAV-BOTTON!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!NAV-BOTTON!!!!!!!!!!!!!!!!!NAV-BOTTON!!!!!!!!!!!!!*/
+	
+	.nav_botton{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+			}
+
+/*!!!!!!!!!!!!!!!!!!!INDEX CONTACT!!!!!!!!!!!!!!!!!INDEX CONTACT!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!INDEX CONTACT!!!!!!!!!!!!!!!!!INDEX CONTACT	
+/*//*!!!!!!!!!!!!!!!!!!!INDEX CONTACT!!!!!!!!!!!!!!!!!INDEX CONTACT!!!!!!!!!!!!!*/
+
+	.contact{
+		
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+			}
+	/*!!!!!!!!!!!!!!!!!!!INDEX-MUALISE!!!!!!!!!!!!!!!!!INDEX-MUALISE!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!INDEX-MUALISE!!!!!!!!!!!!!!!!!INDEX-MUALISE!!!!!!!!!!!!!*/
+
+	.presentation_formule{
+		
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+			}
+	.formule{
+		border: 2px dotted;
+		width: 30%;	
+		padding: 0;
+	}
+
+	ul{
+		padding-left:10%;	
+	}
+
+	.formule > h5{
+		background-color: #243f52;
+		text-align: center;
+		color: white;
+		font-size: 1.2em;
+		margin:2%;
+	}
+
+	.formule > h6{
+		text-align: center;
+		font-size: 1.1em;
+		padding: 1em 0;
+		margin: 1em 0.5em;
+	}
+
+	.formule > a{
+		display: inline-block;
+		text-decoration: none;
+		background-color:#fb8a9b;
+		text-align: center;
+		color: white;
+		font-size: 1.2em;
+		width: 80%;
+		width: 96%;
+		margin: 1em 7px;
+		transition: 0.30s;	
+	}
+	
+	.formule > a:hover{
+		transform:scale(0.85);
+		background-color:  #2f398b ;
+	}
+
+
+
+
+
+
+	nav a{
+		display: block;
+		text-decoration: none;
+		color: #243f52;
+		font-size: 1.4em;
+		margin-top: 1em;
+		font-weight: bold;
+		transition: 0.30s;
+	}
+
+	
+
+
+
+	.presentation_formule:hover .formule {
+		opacity: 0.5;
+	}
+
+	.presentation_formule:hover .formule:hover {
+		opacity: 1;
+	}
+	
+
+
+
+}
